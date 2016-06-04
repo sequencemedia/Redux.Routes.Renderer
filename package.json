@@ -1,0 +1,39 @@
+{
+  "name": "redux-routes-renderer",
+  "version": "0.0.1",
+  "description": "Redux Routes Renderer",
+  "main": "./index.js",
+  "author": {
+    "email": "sequencemedia@sequencemedia.net",
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "url": "http://www.sequencemedia.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sequencemedia/Redux.Routes.Renderer.git"
+  },
+  "license": "MIT",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-transform-class-properties": "^6.9.1",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "boom": "^3.2.1",
+    "history": "^2.1.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1",
+    "standard": "^7.1.1"
+  }
+}
