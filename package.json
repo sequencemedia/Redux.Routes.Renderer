@@ -1,6 +1,6 @@
 {
   "name": "redux-routes-renderer",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Redux Routes Renderer",
   "main": "./index.js",
   "author": {
