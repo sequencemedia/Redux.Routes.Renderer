@@ -7,9 +7,9 @@
     "stage-1"
   ],
   "plugins": [
-    "transform-runtime",
     "transform-class-properties",
     "transform-object-rest-spread",
-    "transform-react-jsx"
+    "transform-react-jsx",
+    "transform-runtime"
   ]
 }
