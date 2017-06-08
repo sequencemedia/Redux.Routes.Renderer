@@ -1,6 +1,6 @@
 {
   "name": "redux-routes-renderer",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Redux Routes Renderer",
   "main": "./index.js",
   "author": {
@@ -15,7 +15,8 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "eslint": "eslint src"
   },
   "dependencies": {
     "boom": "^5.1.0"
@@ -32,10 +33,12 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
-    "babel-register": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1",
     "eslint-plugin-standard": "^3.0.1"
   },
   "peerDependencies": {
