@@ -1,6 +1,6 @@
 {
   "name": "redux-routes-renderer",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Redux Routes Renderer",
   "main": "./index.js",
   "author": {
@@ -14,9 +14,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir lib",
+    "build": "babel src -d lib",
     "prepublish": "npm run build",
-    "eslint": "eslint src"
+    "lint": "eslint src"
   },
   "dependencies": {
     "boom": "^5.1.0"
