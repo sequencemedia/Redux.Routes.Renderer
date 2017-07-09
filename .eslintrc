@@ -13,8 +13,5 @@
   "parser": "babel-eslint",
   "plugins": [
     "react"
-  ],
-  "rules": {
-    "promise/param-names": 0
-  }
+  ]
 }

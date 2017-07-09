@@ -4,12 +4,12 @@
     "es2015",
     "react",
     "stage-0",
-    "stage-1"
+    "stage-1",
+    "babili"
   ],
   "plugins": [
     "transform-class-properties",
     "transform-object-rest-spread",
-    "transform-react-jsx",
-    "transform-runtime"
+    "transform-react-jsx"
   ]
 }
