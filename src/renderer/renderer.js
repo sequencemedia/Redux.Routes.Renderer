@@ -16,7 +16,7 @@ const notFound = (location) => Boom.notFound(`ReactRouter.match() cannot find ${
 /**
  * @return {Array}
  */
-const reduce = (was, now) => was.concat(({ needs = [] }) => needs)
+const reduce = (was, { needs: now = [] } = {}) => was.concat(now)
 
 /**
  * @return {Promise}
