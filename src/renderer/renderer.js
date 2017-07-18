@@ -4,6 +4,10 @@ import { match, RouterContext } from 'react-router'
 import ReactDOMServer from 'react-dom/server'
 import Boom from 'boom'
 
+const REDUCE = [
+  (payload) => ({ type: '@@redux/REDUX_ROUTES_RENDERER', payload })
+]
+
 const ROUTER_MATCH = 'Renderer encountered an error raised by ReactRouter.match()'
 const REACT_RENDER =
   '(1) Renderer caught an implementation error in ReactDOMServer.renderToString()'
@@ -21,7 +25,11 @@ const reduce = (was, { needs: now = [] } = {}) => was.concat(now)
 /**
  * @return {Promise}
  */
-const resolveComponentNeeds = (dispatch, components, params) => Promise.all(components.reduce(reduce, []).map((need) => dispatch(need(params))))
+const resolveComponentNeeds = (dispatch, components, params) => (
+  Promise.all(
+    components.reduce(reduce, REDUCE).map((need) => dispatch(need(params)))
+  )
+)
 
 /**
  * @return {String}
